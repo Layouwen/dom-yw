@@ -18,6 +18,7 @@ window.dyw = {
         dyw.before(node, newParent)
         dyw.append(newParent, node)
     },
+
     // 删
     remove(removeNode) { // 删除一个节点
         removeNode.parentNode.removeChild(node)
@@ -34,6 +35,8 @@ window.dyw = {
         nodeParent.innerHTML = ''
         return arr
     },
+
+    // 改
     attr(node, name, value) { // 设置或查看节点属性
         if (arguments.length === 2) {
             return node.getAttribute(name)
@@ -86,6 +89,7 @@ window.dyw = {
     off(node, eventName, fn) { // 结束一个事件
         node.removeEventListener(eventName, fn)
     },
+
     // 查
     find(selector, scope) { // 查找节点
         return (scope || document).querySelectorAll(selector)
