@@ -114,6 +114,6 @@ window.dyw = {
         return previous
     },
     each(nodes, fn) {
-
+        return
     }
 }
