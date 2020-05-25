@@ -113,7 +113,19 @@ window.dyw = {
         }
         return previous
     },
-    each(nodes, fn) {
-        return
+    each(nodes, fn) { // 遍历元素
+        for(let i = 0; i<nodes.length; i++){
+            fn.call(null, nodes[i])
+        }
+    },
+    index(node) { // 获取元素下标
+        const list = dom.children(node.parentNode)
+        let i
+        for (i = 0; i < list.length; i++) {
+            if (list[i] === node) {
+                break
+            }
+        }
+        return i
     }
 }
