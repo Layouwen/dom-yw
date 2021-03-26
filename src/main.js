@@ -1,3 +1,4 @@
-let div = dyw.create('<div></div>')
-dyw.append(window.ept, div)
-let a = dyw.find('a')[0]
+const findEl = dyw.find('#ept')
+dyw.each(findEl, function (a) {
+  console.log(this, a)
+})
