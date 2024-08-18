@@ -1,12 +1,13 @@
 # Dom Yw
 
-English | [中文](./README_zh-CN.md)
+[English](./README.md) | 中文
 
-## Introduction
+## 介绍
 
-A wrapper for the native DOM API to simplify operations, intended only for learning purposes. It is not supported in production environments.
+对原生 DOM Api 的封装，简化操作, 仅用于学习封装的思路. 不支持生产环境.
 
-## Usage
+## 使用
+
 
 ```javascript
 const dom = dyw.create("<div>Avan</div>")
@@ -25,8 +26,8 @@ dyw.wrapper(dom, "<main></main>")
 // <main><div>Yw</div><div>Avan</div><div>Dom</div><span>inner</span></main>
 ```
 
-[See more](./src/dyw.js)
+[查看更多](./src/dyw.js)
 
-## Contact Me
+## 联系我
 
 [Github](https://github.com/Layouwen)
